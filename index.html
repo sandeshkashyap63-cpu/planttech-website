@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Planttech Engineering — Process Machinery for Herbal, Nutraceutical, Pharma & Chemical Plants</title>
+<meta name="description" content="Planttech Engineering, Haridwar — design, fabrication and turnkey installation of pressure vessels, reactors, extraction and process systems for herbal, nutraceutical, pharma and chemical plants. Request a quote.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#15181B;
+    --ink-soft:#22272C;
+    --steel:#5B6670;
+    --muted:#4C555D;
+    --line:#D9DCDF;
+    --line-soft:#E7E9EB;
+    --panel:#EDEFF1;
+    --paper:#F7F6F3;
+    --white:#FFFFFF;
+    --copper:#A2532C;
+    --copper-dark:#86421f;
+    --copper-tint:#F2E6DD;
+    --copper-bright:#E0894F;
+    --maxw:1200px;
+    --r:4px;
+    --gut:24px;
+    --ease:cubic-bezier(.2,.7,.2,1);
+  }
+
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:"IBM Plex Sans",system-ui,sans-serif;
+    color:var(--ink);
+    background:var(--paper);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  img,svg{display:block;max-width:100%}
+  a{color:inherit;text-decoration:none}
+
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--gut)}
+
+  .eyebrow{
+    font-family:"IBM Plex Mono",monospace;
+    font-size:.72rem;font-weight:600;letter-spacing:.16em;
+    text-transform:uppercase;color:var(--copper);
+    display:inline-flex;align-items:center;gap:.55em;
+  }
+  .eyebrow::before{content:"";width:18px;height:1px;background:var(--copper)}
+
+  h1,h2,h3{font-family:"Archivo",sans-serif;line-height:1.04;letter-spacing:-.02em;color:var(--ink)}
+  h1{font-size:clamp(2.3rem,5.4vw,4rem);font-weight:800}
+  h2{font-size:clamp(1.9rem,3.6vw,2.85rem);font-weight:700}
+  h3{font-size:1.18rem;font-weight:700;letter-spacing:-.01em}
+
+  .tag{
+    font-family:"IBM Plex Mono",monospace;font-size:.7rem;font-weight:500;
+    letter-spacing:.05em;color:var(--muted);
+    border:1px solid var(--line);border-radius:99px;
+    padding:.28em .7em;white-space:nowrap;background:var(--white);
+  }
+
+  /* ---- Buttons ---- */
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:.55em;
+    font-family:"IBM Plex Sans",sans-serif;font-weight:600;font-size:.98rem;
+    padding:.82em 1.4em;border-radius:var(--r);cursor:pointer;border:1.5px solid transparent;
+    min-height:48px;transition:transform .15s var(--ease),background .2s,border-color .2s,color .2s;
+    line-height:1;
+  }
+  .btn:active{transform:translateY(1px)}
+  .btn-primary{background:var(--copper);color:#fff;border-color:var(--copper)}
+  .btn-primary:hover{background:var(--copper-dark);border-color:var(--copper-dark)}
+  .btn-ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+  .btn-ghost:hover{background:var(--ink);color:var(--paper)}
+  .btn-ghost-light{background:transparent;color:var(--paper);border-color:rgba(247,246,243,.45)}
+  .btn-ghost-light:hover{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+  .btn-block{width:100%}
+  a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{
+    outline:3px solid var(--copper);outline-offset:2px;border-radius:var(--r);
+  }
+
+  /* ---- Utility bar ---- */
+  .util{background:var(--ink);color:#C7CDD2;font-size:.8rem}
+  .util .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:40px;flex-wrap:wrap}
+  .util .creds{display:flex;gap:18px;font-family:"IBM Plex Mono",monospace;font-size:.72rem;letter-spacing:.04em}
+  .util .creds span{display:inline-flex;align-items:center;gap:.5em}
+  .util .creds .dot{width:5px;height:5px;border-radius:50%;background:var(--copper)}
+  .util .right{display:flex;align-items:center;gap:18px}
+  .util a.phone{color:#fff;font-weight:600;font-family:"IBM Plex Mono",monospace;letter-spacing:.02em}
+  .util a.phone:hover{color:var(--copper)}
+
+  /* ---- Header ---- */
+  header{
+    position:sticky;top:0;z-index:60;background:rgba(247,246,243,.92);
+    backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--line);
+  }
+  header .wrap{display:flex;align-items:center;justify-content:space-between;min-height:72px;gap:24px}
+  .logo{display:flex;align-items:center;gap:11px;font-family:"Archivo",sans-serif;font-weight:800;font-size:1.22rem;letter-spacing:-.02em}
+  .logo .mark{width:30px;height:30px;flex:0 0 auto}
+  .logo small{display:block;font-family:"IBM Plex Mono",monospace;font-weight:500;font-size:.56rem;letter-spacing:.18em;color:var(--copper);text-transform:uppercase;margin-top:2px}
+  nav.main{display:flex;gap:28px}
+  nav.main a{font-size:.95rem;font-weight:500;color:var(--ink-soft);position:relative;padding:4px 0}
+  nav.main a::after{content:"";position:absolute;left:0;bottom:-2px;width:0;height:2px;background:var(--copper);transition:width .22s var(--ease)}
+  nav.main a:hover{color:var(--ink)}
+  nav.main a:hover::after{width:100%}
+  .header-cta{display:flex;align-items:center;gap:14px}
+  .hamb{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:10px;min-height:44px;min-width:44px}
+  .hamb span{width:24px;height:2px;background:var(--ink);transition:.25s}
+
+  /* ---- Hero (full-bleed image slider) ---- */
+  .hero{position:relative;min-height:clamp(560px,82vh,768px);display:flex;align-items:center;overflow:hidden;background:var(--ink)}
+  .hero-slider{position:absolute;inset:0;z-index:0}
+  .slide{position:absolute;inset:0;background-size:cover;background-position:center;background-color:var(--ink-soft);
+    opacity:0;transform:scale(1.05);transition:opacity .9s var(--ease),transform 7s var(--ease)}
+  .slide.is-active{opacity:1;transform:scale(1)}
+  /* placeholder look until real photos are added */
+  .slide .ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;
+    background:radial-gradient(80% 60% at 68% 32%,rgba(162,83,44,.16),transparent 60%),linear-gradient(135deg,#2A3036,#15181B 62%)}
+  .slide .ph::before{content:"";position:absolute;inset:0;opacity:.4;
+    background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);
+    background-size:42px 42px}
+  .slide .ph .num{font-family:"Archivo";font-weight:800;font-size:3.4rem;color:rgba(255,255,255,.13);letter-spacing:-.03em;position:relative}
+  .slide .ph .lbl{font-family:"IBM Plex Mono";font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.48);position:relative;text-align:center;padding:0 24px}
+
+  .hero-scrim{position:absolute;inset:0;z-index:1;
+    background:linear-gradient(90deg,rgba(15,18,21,.93) 0%,rgba(15,18,21,.8) 38%,rgba(15,18,21,.4) 70%,rgba(15,18,21,.15) 100%)}
+
+  .hero .wrap{position:relative;z-index:2;width:100%}
+  .hero-content{max-width:600px}
+  .hero-content .eyebrow{color:#fff}
+  .hero-content .eyebrow::before{background:var(--copper-bright)}
+  .hero h1{margin:18px 0 0;color:#fff}
+  .hero h1 .accent{color:var(--copper-bright)}
+  .hero .lede{font-size:1.16rem;color:#CDD3D8;margin-top:20px;max-width:32em}
+  .hero-actions{display:flex;gap:14px;margin-top:30px;flex-wrap:wrap}
+
+  .specbar{display:flex;flex-wrap:wrap;gap:10px;margin-top:34px}
+  .specbar .sp{
+    font-family:"IBM Plex Mono",monospace;font-size:.74rem;color:#E7EAEC;
+    border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.07);border-radius:var(--r);
+    padding:.5em .8em;display:flex;align-items:baseline;gap:.5em}
+  .specbar .sp b{font-size:.92rem;color:var(--copper-bright);font-weight:600}
+
+  /* slider controls + caption */
+  .hero-caption{position:absolute;z-index:3;right:24px;bottom:66px;font-family:"IBM Plex Mono";font-size:.72rem;
+    letter-spacing:.05em;color:rgba(255,255,255,.72);text-align:right;max-width:46vw}
+  .hero-controls{position:absolute;z-index:3;left:0;right:0;bottom:26px}
+  .hero-controls .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px}
+  .dots{display:flex;gap:9px}
+  .dots button{width:30px;height:4px;border-radius:99px;border:0;background:rgba(255,255,255,.3);cursor:pointer;padding:0;
+    transition:background .25s,width .25s;min-height:auto}
+  .dots button.on{background:var(--copper-bright);width:46px}
+  .dots button:focus-visible{outline:3px solid #fff;outline-offset:4px}
+  .arrows{display:flex;gap:10px}
+  .arrows button{width:46px;height:46px;border-radius:50%;border:1.5px solid rgba(255,255,255,.35);background:rgba(15,18,21,.4);
+    color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .2s,border-color .2s}
+  .arrows button:hover{background:var(--copper);border-color:var(--copper)}
+  .arrows svg{width:20px;height:20px}
+
+  /* ---- Stat / trust strip ---- */
+  .trust{background:var(--ink);color:var(--paper)}
+  .trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.1);border-radius:6px;overflow:hidden;margin-top:-1px}
+  .trust .cell{background:var(--ink);padding:30px 26px}
+  .stat{font-family:"Archivo",sans-serif;font-weight:800;font-size:2.3rem;letter-spacing:-.03em;line-height:1}
+  .stat .u{color:var(--copper)}
+  .stat-l{font-family:"IBM Plex Mono",monospace;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:#9AA3AA;margin-top:9px}
+
+  /* ---- Section scaffold ---- */
+  .section{padding:clamp(56px,7vw,96px) 0;position:relative}
+  .section--panel{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .sec-head{max-width:640px;margin-bottom:44px}
+  .sec-head h2{margin-top:14px}
+  .sec-head p{color:var(--muted);margin-top:14px;font-size:1.05rem}
+  .sec-index{font-family:"IBM Plex Mono",monospace;font-size:.74rem;color:var(--steel);letter-spacing:.1em}
+
+  /* ---- Equipment cards (datasheet style) ---- */
+  .equip-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .equip{
+    background:var(--paper);border:1px solid var(--line);border-radius:6px;
+    padding:24px 22px 20px;display:flex;flex-direction:column;
+    transition:border-color .2s,transform .2s var(--ease),box-shadow .2s;
+  }
+  .equip:hover{border-color:var(--copper);transform:translateY(-3px);box-shadow:0 14px 30px -22px rgba(21,24,27,.5)}
+  .equip .ic{width:42px;height:42px;color:var(--copper);margin-bottom:16px}
+  .equip h3{margin-bottom:8px}
+  .equip p{font-size:.93rem;color:var(--muted);flex:1}
+  .equip .specs{display:flex;flex-wrap:wrap;gap:6px;margin:16px 0 18px;padding-top:16px;border-top:1px dashed var(--line)}
+  .equip .enq{
+    font-family:"IBM Plex Sans";font-weight:600;font-size:.9rem;color:var(--ink);
+    display:inline-flex;align-items:center;gap:.45em;align-self:flex-start;
+  }
+  .equip .enq svg{width:15px;height:15px;transition:transform .2s var(--ease);color:var(--copper)}
+  .equip:hover .enq svg{transform:translate(3px,-3px)}
+
+  /* ---- Industries ---- */
+  .ind-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+  .ind{border:1px solid var(--line);border-radius:6px;background:var(--white);overflow:hidden;transition:transform .2s var(--ease),box-shadow .2s}
+  .ind:hover{transform:translateY(-3px);box-shadow:0 14px 30px -22px rgba(21,24,27,.5)}
+  .ind .band{height:5px;background:var(--copper)}
+  .ind .body{padding:22px 20px}
+  .ind .n{font-family:"IBM Plex Mono",monospace;font-size:.72rem;color:var(--steel);letter-spacing:.08em}
+  .ind h3{margin:10px 0 8px}
+  .ind p{font-size:.9rem;color:var(--muted)}
+
+  /* ---- Capabilities split ---- */
+  .cap{display:grid;grid-template-columns:.92fr 1.08fr;gap:56px;align-items:center}
+  .cap-list{display:grid;gap:2px;border-top:1px solid var(--line)}
+  .cap-item{padding:22px 4px;border-bottom:1px solid var(--line);display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:start}
+  .cap-item .num{font-family:"IBM Plex Mono",monospace;font-size:.8rem;color:var(--copper);font-weight:600;padding-top:3px}
+  .cap-item h3{margin-bottom:5px}
+  .cap-item p{font-size:.94rem;color:var(--muted)}
+  .cap-aside{background:var(--ink);color:var(--paper);border-radius:8px;padding:38px 34px}
+  .cap-aside .eyebrow{color:#fff}
+  .cap-aside .eyebrow::before{background:var(--copper)}
+  .cap-aside h3{color:#fff;font-size:1.6rem;margin:16px 0 14px;font-family:"Archivo";font-weight:700}
+  .cap-aside p{color:#B9C0C6;font-size:.98rem;margin-bottom:24px}
+  .cap-aside .mini{display:flex;gap:26px;margin-bottom:28px;flex-wrap:wrap}
+  .cap-aside .mini b{font-family:"Archivo";font-weight:800;font-size:1.7rem;display:block;line-height:1}
+  .cap-aside .mini span{font-family:"IBM Plex Mono";font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;color:#9AA3AA}
+
+  /* ---- Process ---- */
+  .proc{display:grid;grid-template-columns:repeat(5,1fr);gap:0;counter-reset:step;border:1px solid var(--line);border-radius:6px;overflow:hidden;background:var(--white)}
+  .step{padding:26px 22px;border-right:1px solid var(--line);position:relative}
+  .step:last-child{border-right:0}
+  .step .s{font-family:"IBM Plex Mono",monospace;font-size:.78rem;color:var(--copper);font-weight:600}
+  .step h3{font-size:1.02rem;margin:14px 0 7px}
+  .step p{font-size:.86rem;color:var(--muted)}
+  .step::after{content:"";position:absolute;top:31px;right:-5px;width:9px;height:9px;border-top:1.5px solid var(--copper);border-right:1.5px solid var(--copper);transform:rotate(45deg);background:var(--white)}
+  .step:last-child::after{display:none}
+
+  /* ---- Proof ---- */
+  .quote-wrap{display:grid;grid-template-columns:1.3fr .7fr;gap:48px;align-items:center}
+  blockquote{font-family:"Archivo",sans-serif;font-weight:600;font-size:clamp(1.4rem,2.6vw,1.95rem);line-height:1.28;letter-spacing:-.015em;color:var(--ink)}
+  blockquote .mk{color:var(--copper)}
+  .quote-by{font-family:"IBM Plex Mono",monospace;font-size:.8rem;color:var(--steel);margin-top:22px;letter-spacing:.04em}
+  .logos{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .logos div{border:1px solid var(--line);border-radius:6px;height:74px;display:flex;align-items:center;justify-content:center;font-family:"IBM Plex Mono";font-size:.72rem;color:var(--steel);letter-spacing:.06em;background:var(--white)}
+
+  /* ---- Lead form ---- */
+  .lead{background:var(--ink);color:var(--paper)}
+  .lead-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:60px;align-items:start}
+  .lead h2{color:#fff}
+  .lead .eyebrow{color:#fff}
+  .lead .eyebrow::before{background:var(--copper)}
+  .lead-copy p{color:#B9C0C6;font-size:1.05rem;margin-top:16px;max-width:34em}
+  .lead-alt{margin-top:30px;display:grid;gap:14px}
+  .lead-alt a{display:flex;align-items:center;gap:14px;padding:16px 18px;border:1px solid rgba(255,255,255,.16);border-radius:6px;transition:border-color .2s,background .2s}
+  .lead-alt a:hover{border-color:var(--copper);background:rgba(162,83,44,.12)}
+  .lead-alt .ic{width:24px;height:24px;color:var(--copper);flex:0 0 auto}
+  .lead-alt b{display:block;font-size:.98rem;color:#fff}
+  .lead-alt span{font-family:"IBM Plex Mono";font-size:.78rem;color:#9AA3AA}
+
+  form.card{background:var(--paper);border-radius:8px;padding:30px 28px}
+  form.card .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .field{margin-bottom:14px}
+  .field label{display:block;font-size:.82rem;font-weight:600;color:var(--ink);margin-bottom:6px}
+  .field label .req{color:var(--copper)}
+  .field input,.field select,.field textarea{
+    width:100%;font-family:inherit;font-size:.96rem;color:var(--ink);
+    padding:.72em .85em;border:1px solid var(--line);border-radius:var(--r);background:var(--white);
+  }
+  .field textarea{resize:vertical;min-height:84px}
+  .form-note{font-family:"IBM Plex Mono";font-size:.72rem;color:var(--steel);margin-top:6px;text-align:center}
+  .form-done{display:none;text-align:center;padding:30px 10px}
+  .form-done.show{display:block}
+  .form-done .ok{width:54px;height:54px;margin:0 auto 16px;color:var(--copper)}
+  .form-done h3{font-size:1.3rem;margin-bottom:8px}
+  .form-done p{color:var(--muted)}
+
+  /* ---- Footer ---- */
+  footer{background:#0F1215;color:#9AA3AA;padding:64px 0 30px;font-size:.9rem}
+  .foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:40px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.1)}
+  footer .logo{color:#fff;margin-bottom:14px}
+  footer p{max-width:30em;line-height:1.7}
+  .foot-col h4{font-family:"IBM Plex Mono";font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:#fff;margin-bottom:16px}
+  .foot-col a{display:block;color:#9AA3AA;padding:5px 0;transition:color .2s}
+  .foot-col a:hover{color:var(--copper)}
+  .foot-bottom{display:flex;justify-content:space-between;gap:16px;padding-top:24px;flex-wrap:wrap;font-family:"IBM Plex Mono";font-size:.74rem;letter-spacing:.03em}
+
+  /* ---- Sticky mobile contact ---- */
+  .mbar{position:fixed;left:0;right:0;bottom:0;z-index:70;display:none;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);box-shadow:0 -6px 20px -10px rgba(0,0,0,.3)}
+  .mbar a{display:flex;align-items:center;justify-content:center;gap:8px;padding:15px;font-weight:600;font-size:.95rem;min-height:54px}
+  .mbar .call{background:var(--ink);color:#fff}
+  .mbar .wa{background:var(--copper);color:#fff}
+  .mbar svg{width:19px;height:19px}
+
+  /* ---- Reveal ---- */
+  .reveal{opacity:0;transform:translateY(20px);transition:opacity .6s var(--ease),transform .6s var(--ease)}
+  .reveal.in{opacity:1;transform:none}
+
+  /* ---- Responsive ---- */
+  @media(max-width:980px){
+    .hero{min-height:74vh}
+    .trust .wrap{grid-template-columns:1fr 1fr}
+    .equip-grid{grid-template-columns:1fr 1fr}
+    .ind-grid{grid-template-columns:1fr 1fr}
+    .cap{grid-template-columns:1fr;gap:36px}
+    .proc{grid-template-columns:1fr 1fr;border:0;gap:14px;background:transparent}
+    .step{border:1px solid var(--line);border-radius:6px;background:var(--white)}
+    .step::after{display:none}
+    .quote-wrap{grid-template-columns:1fr;gap:32px}
+    .lead-grid{grid-template-columns:1fr;gap:40px}
+    .foot-grid{grid-template-columns:1fr 1fr;gap:32px}
+  }
+  @media(max-width:680px){
+    nav.main,.header-cta .btn,.util .creds{display:none}
+    .hamb{display:flex}
+    body{padding-bottom:54px}
+    .mbar{display:grid}
+    .equip-grid,.ind-grid,.proc,.foot-grid{grid-template-columns:1fr}
+    form.card .row{grid-template-columns:1fr}
+    .util .wrap{justify-content:center}
+    .cap-aside .mini{gap:20px}
+    .hero{min-height:78vh}
+    .hero-scrim{background:linear-gradient(180deg,rgba(15,18,21,.5) 0%,rgba(15,18,21,.82) 52%,rgba(15,18,21,.94) 100%)}
+    .hero-caption{display:none}
+    .arrows{display:none}
+    .hero-controls{bottom:18px}
+    .hero-controls .wrap{justify-content:center}
+  }
+
+  /* ---- Mobile drawer ---- */
+  .drawer{position:fixed;inset:0;z-index:80;background:var(--paper);transform:translateX(100%);transition:transform .3s var(--ease);display:flex;flex-direction:column;padding:24px}
+  .drawer.open{transform:none}
+  .drawer .x{align-self:flex-end;background:none;border:0;font-size:2rem;cursor:pointer;line-height:1;padding:8px;color:var(--ink)}
+  .drawer a{font-family:"Archivo";font-weight:700;font-size:1.6rem;padding:14px 0;border-bottom:1px solid var(--line)}
+  .drawer .btn{margin-top:20px}
+
+  @media(prefers-reduced-motion:reduce){
+    *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+    .reveal{opacity:1;transform:none}
+  }
+
+  /* ---- Input focus ring ---- */
+  .field input:focus,.field select:focus,.field textarea:focus{
+    border-color:var(--copper);outline:none;
+    box-shadow:0 0 0 3px rgba(162,83,44,.13);
+  }
+
+  /* ---- Form validation error state ---- */
+  .field.has-error input,.field.has-error select,.field.has-error textarea{
+    border-color:#C84B31;background:#FFF9F7;
+  }
+  .field .err{
+    display:none;font-family:"IBM Plex Mono",monospace;
+    font-size:.74rem;color:#C84B31;margin-top:4px;
+  }
+  .field.has-error .err{display:block}
+
+  /* ---- Disabled / loading button ---- */
+  .btn:disabled{opacity:.6;cursor:not-allowed;pointer-events:none}
+
+  /* ---- Form network error message ---- */
+  .form-net-err{
+    display:none;background:#FFF1EE;border:1px solid #F0C4BB;
+    border-radius:var(--r);padding:12px 14px;margin-top:12px;
+    font-size:.88rem;color:#7A2217;text-align:center;
+  }
+  .form-net-err.show{display:block}
+</style>
+</head>
+<body>
+
+<!-- ============ UTILITY BAR ============ -->
+<div class="util">
+  <div class="wrap">
+    <div class="creds">
+      <span><span class="dot" aria-hidden="true"></span>GST 05AAQCP2989J1ZO</span>
+      <span><span class="dot" aria-hidden="true"></span>ISO 9001 · cGMP-ready builds</span>
+      <span><span class="dot" aria-hidden="true"></span>Laksar, Haridwar</span>
+    </div>
+    <div class="right">
+      <a class="phone" href="tel:+917942820338">+91 79428 20338</a>
+      <a href="https://wa.me/917942820338" style="color:#fff;font-weight:600">WhatsApp&nbsp;↗</a>
+    </div>
+  </div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Planttech Engineering home">
+      <svg class="mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <rect x="1" y="1" width="30" height="30" rx="3" stroke="#15181B" stroke-width="1.5"/>
+        <path d="M9 23V12c0-1.1.9-2 2-2h4c2.2 0 4 1.8 4 4s-1.8 4-4 4h-3" stroke="#A2532C" stroke-width="2.2" stroke-linecap="round"/>
+        <circle cx="23" cy="9" r="2" fill="#A2532C"/>
+      </svg>
+      <span>PLANTTECH<small>Process Engineering</small></span>
+    </a>
+    <nav class="main" aria-label="Primary">
+      <a href="#equipment">Equipment</a>
+      <a href="#industries">Industries</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#process">How we work</a>
+      <a href="#about">About</a>
+    </nav>
+    <div class="header-cta">
+      <a class="btn btn-primary" href="#quote">Request a Quote</a>
+      <button class="hamb" id="hamb" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- mobile drawer -->
+<div class="drawer" id="drawer" aria-hidden="true">
+  <button class="x" id="closeDrawer" aria-label="Close menu">&times;</button>
+  <a href="#equipment">Equipment</a>
+  <a href="#industries">Industries</a>
+  <a href="#capabilities">Capabilities</a>
+  <a href="#process">How we work</a>
+  <a href="#about">About</a>
+  <a class="btn btn-primary btn-block" href="#quote">Request a Quote</a>
+</div>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <!-- HERO IMAGE SLIDER · To add real photos: uncomment the style="" on each .slide, set your image path (≈1920×1080, JPG/WebP), then delete that slide's .ph block. -->
+  <div class="hero-slider" id="heroSlider" aria-label="Extraction and process plants by Planttech" aria-roledescription="carousel">
+    <div class="slide is-active" data-caption="Herbal extraction plant · 2 KL · SS 316L"><!-- style="background-image:url('images/extraction-plant-1.jpg')" -->
+      <div class="ph"><span class="num">01</span><span class="lbl">Extraction plant — add your photo</span></div>
+    </div>
+    <div class="slide" data-caption="Multi-functional extractor &amp; condenser skid"><!-- style="background-image:url('images/extraction-plant-2.jpg')" -->
+      <div class="ph"><span class="num">02</span><span class="lbl">Extraction plant — add your photo</span></div>
+    </div>
+    <div class="slide" data-caption="Solvent recovery &amp; distillation assembly"><!-- style="background-image:url('images/extraction-plant-3.jpg')" -->
+      <div class="ph"><span class="num">03</span><span class="lbl">Extraction plant — add your photo</span></div>
+    </div>
+    <div class="slide" data-caption="Reactor &amp; process vessel fabrication"><!-- style="background-image:url('images/extraction-plant-4.jpg')" -->
+      <div class="ph"><span class="num">04</span><span class="lbl">Extraction plant — add your photo</span></div>
+    </div>
+  </div>
+  <div class="hero-scrim"></div>
+
+  <div class="wrap">
+    <div class="hero-content">
+      <span class="eyebrow">Herbal extraction plants · Engineered in Haridwar</span>
+      <h1>Extraction &amp; process plants, built to <span class="accent">pharma-grade</span> standard.</h1>
+      <p class="lede">Design, fabrication and turnkey installation of herbal extraction plants, reactors, vessels and process systems — for nutraceutical, pharmaceutical and chemical manufacturers.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#quote">Request a Quote</a>
+        <a class="btn btn-ghost-light" href="tel:+917942820338">Talk to an Engineer&nbsp;↗</a>
+      </div>
+      <div class="specbar" aria-label="At a glance">
+        <span class="sp"><b>15+</b> years</span>
+        <span class="sp"><b>200+</b> plants delivered</span>
+        <span class="sp"><b>SS 316L</b> contact parts</span>
+        <span class="sp"><b>cGMP</b> finishes</span>
+      </div>
+    </div>
+  </div>
+
+  <p class="hero-caption" id="heroCaption" aria-live="polite">Herbal extraction plant · 2 KL · SS 316L</p>
+
+  <div class="hero-controls">
+    <div class="wrap">
+      <div class="dots" id="heroDots" aria-label="Select slide"></div>
+      <div class="arrows">
+        <button id="heroPrev" type="button" aria-label="Previous slide"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></button>
+        <button id="heroNext" type="button" aria-label="Next slide"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST / STATS ============ -->
+<section class="trust" aria-label="Key figures">
+  <div class="wrap">
+    <div class="cell"><div class="stat">15<span class="u">+</span></div><div class="stat-l">Years in fabrication</div></div>
+    <div class="cell"><div class="stat">200<span class="u">+</span></div><div class="stat-l">Plants & systems delivered</div></div>
+    <div class="cell"><div class="stat">4</div><div class="stat-l">Process industries served</div></div>
+    <div class="cell"><div class="stat">100<span class="u">%</span></div><div class="stat-l">In-house design & build</div></div>
+  </div>
+</section>
+
+<!-- ============ EQUIPMENT ============ -->
+<section class="section" id="equipment">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-index">01 — EQUIPMENT</span>
+      <h2>Equipment we engineer & fabricate</h2>
+      <p>Each unit is built to your process parameters and finished to the hygiene standard your industry demands. Capacities and grades shown are representative — final specs are confirmed at the design stage.</p>
+    </div>
+    <div class="equip-grid">
+
+      <article class="equip reveal">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="7" y="3" width="10" height="18" rx="3"/><path d="M7 9h10M7 15h10M12 3v18" stroke-opacity=".4"/></svg>
+        <h3>Pressure Vessels</h3>
+        <p>ASME-grade design and fabrication for storage, reaction and holding under pressure, with full documentation.</p>
+        <div class="specs"><span class="tag">SS 304 / 316L</span><span class="tag">Up to 25 bar</span><span class="tag">Hydro-tested</span></div>
+        <a class="enq" href="#quote">Enquire on this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+      </article>
+
+      <article class="equip reveal">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="13" r="7"/><path d="M12 13V6M12 6c-2 0-3-1.2-3-2.5M12 13l4 3"/></svg>
+        <h3>Reactors & Agitators</h3>
+        <p>Jacketed and limpet-coil reactors with custom agitation for mixing, blending and reaction control.</p>
+        <div class="specs"><span class="tag">50 L – 20 KL</span><span class="tag">Jacket / Limpet</span><span class="tag">VFD drive</span></div>
+        <a class="enq" href="#quote">Enquire on this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+      </article>
+
+      <article class="equip reveal">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 4h14l-2 5v9a2 2 0 01-2 2H9a2 2 0 01-2-2V9L5 4z"/><path d="M5 4h14" stroke-opacity=".4"/></svg>
+        <h3>Extraction Units</h3>
+        <p>Multi-functional extractors and percolators for herbal and botanical processing, sized to batch.</p>
+        <div class="specs"><span class="tag">Herbal / Botanical</span><span class="tag">100 L – 5 KL</span><span class="tag">CIP-ready</span></div>
+        <a class="enq" href="#quote">Enquire on this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+      </article>
+
+      <article class="equip reveal">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M8 3v6l-4 9a2 2 0 002 3h12a2 2 0 002-3l-4-9V3"/><path d="M8 3h8" stroke-opacity=".4"/></svg>
+        <h3>Distillation Systems</h3>
+        <p>Distillation and evaporation assemblies with condensers and receivers for solvent recovery and concentration.</p>
+        <div class="specs"><span class="tag">Solvent recovery</span><span class="tag">Condenser sets</span><span class="tag">Skid-mounted</span></div>
+        <a class="enq" href="#quote">Enquire on this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+      </article>
+
+      <article class="equip reveal">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18M7 6v12M11 6v12M15 6v12"/></svg>
+        <h3>Storage Tanks</h3>
+        <p>Vertical and horizontal tanks for water, solvent and product storage, with level and CIP fittings.</p>
+        <div class="specs"><span class="tag">500 L – 50 KL</span><span class="tag">PW / WFI grade</span><span class="tag">Insulated</span></div>
+        <a class="enq" href="#quote">Enquire on this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+      </article>
+
+      <article class="equip reveal">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M10 7h7v7M7 10v7h7" stroke-opacity=".5"/></svg>
+        <h3>CIP / SIP Systems</h3>
+        <p>Clean-in-place and sterilise-in-place skids that keep your line compliant and validated.</p>
+        <div class="specs"><span class="tag">Automated</span><span class="tag">PLC / HMI</span><span class="tag">Validatable</span></div>
+        <a class="enq" href="#quote">Enquire on this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ INDUSTRIES ============ -->
+<section class="section section--panel" id="industries">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-index">02 — INDUSTRIES</span>
+      <h2>Built for regulated process industries</h2>
+      <p>We speak your compliance language — from GMP herbal lines to chemical process safety.</p>
+    </div>
+    <div class="ind-grid">
+      <div class="ind reveal"><div class="band"></div><div class="body"><div class="n">/01</div><h3>Herbal</h3><p>Extraction, concentration and processing lines for Ayurvedic and botanical manufacturers.</p></div></div>
+      <div class="ind reveal"><div class="band"></div><div class="body"><div class="n">/02</div><h3>Nutraceutical</h3><p>Hygienic mixing, blending and storage systems for supplement and food-grade production.</p></div></div>
+      <div class="ind reveal"><div class="band"></div><div class="body"><div class="n">/03</div><h3>Pharmaceutical</h3><p>cGMP-compliant reactors, vessels and PW/WFI systems engineered for audit readiness.</p></div></div>
+      <div class="ind reveal"><div class="band"></div><div class="body"><div class="n">/04</div><h3>Chemical</h3><p>Corrosion-resistant vessels and process equipment for chemical and specialty plants.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CAPABILITIES ============ -->
+<section class="section" id="capabilities">
+  <div class="wrap cap">
+    <div class="reveal">
+      <span class="sec-index">03 — WHY PLANTTECH</span>
+      <h2 style="margin-top:14px">One partner, from drawing to commissioning</h2>
+      <div class="cap-list" style="margin-top:32px">
+        <div class="cap-item"><span class="num">01</span><div><h3>In-house engineering</h3><p>Process and mechanical design done under one roof — no specs lost between vendors.</p></div></div>
+        <div class="cap-item"><span class="num">02</span><div><h3>cGMP-grade finishing</h3><p>Electropolished, hygienic welds and surface finishes that pass pharma audits.</p></div></div>
+        <div class="cap-item"><span class="num">03</span><div><h3>Turnkey installation</h3><p>We deliver, install and commission on your floor — not just ship a crate.</p></div></div>
+        <div class="cap-item"><span class="num">04</span><div><h3>Documentation & support</h3><p>Full DQ/IQ/OQ documentation and responsive after-sales service.</p></div></div>
+      </div>
+    </div>
+    <aside class="cap-aside reveal">
+      <span class="eyebrow">Quality you can audit</span>
+      <h3>Every joint, finish and document built to stand up to inspection.</h3>
+      <p>Material traceability, hydro-testing and surface-finish reports come standard — so your validation team isn't left chasing paperwork.</p>
+      <div class="mini">
+        <div><b>SS 316L</b><span>Contact parts</span></div>
+        <div><b>Ra ≤ 0.4</b><span>Surface finish µm</span></div>
+        <div><b>100%</b><span>Weld inspection</span></div>
+      </div>
+      <a class="btn btn-primary" href="#quote">Discuss your project</a>
+    </aside>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="section section--panel" id="process">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-index">04 — HOW WE WORK</span>
+      <h2>From enquiry to running plant</h2>
+      <p>A clear, five-stage path with a single point of accountability.</p>
+    </div>
+    <div class="proc reveal">
+      <div class="step"><div class="s">01</div><h3>Enquiry</h3><p>Share your process, capacity and compliance needs.</p></div>
+      <div class="step"><div class="s">02</div><h3>Design</h3><p>We engineer GA drawings and a detailed quote.</p></div>
+      <div class="step"><div class="s">03</div><h3>Fabrication</h3><p>In-house build with inspection at every stage.</p></div>
+      <div class="step"><div class="s">04</div><h3>Installation</h3><p>Delivery, erection and commissioning on site.</p></div>
+      <div class="step"><div class="s">05</div><h3>Support</h3><p>Documentation, validation aid and after-sales.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROOF ============ -->
+<section class="section" id="about">
+  <div class="wrap quote-wrap">
+    <div class="reveal">
+      <span class="eyebrow">Trusted by manufacturers</span>
+      <blockquote style="margin-top:20px"><span class="mk">“</span>Planttech delivered our extraction line on schedule and audit-ready. The finishing and documentation were exactly what our pharma clients expect.<span class="mk">”</span></blockquote>
+      <div class="quote-by">— Plant Head, Nutraceutical Manufacturer · Uttarakhand</div>
+    </div>
+    <div class="logos reveal" aria-label="Selected clients">
+      <div>CLIENT 01</div><div>CLIENT 02</div><div>CLIENT 03</div><div>CLIENT 04</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LEAD FORM ============ -->
+<section class="lead section" id="quote">
+  <div class="wrap lead-grid">
+    <div class="lead-copy reveal">
+      <span class="eyebrow">Request a quote</span>
+      <h2 style="margin-top:14px">Tell us what you're building.</h2>
+      <p>Send your requirement and our engineering team responds within one business day — with the right questions, not a generic reply.</p>
+      <div class="lead-alt">
+        <a href="tel:+917942820338">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-3 2a14 14 0 006 6l2-3 5 2v4a2 2 0 01-2 2A18 18 0 013 6a2 2 0 012-2z"/></svg>
+          <div><b>Call an engineer</b><span>+91 79428 20338</span></div>
+        </a>
+        <a href="https://wa.me/917942820338">
+          <svg class="ic" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.5 15.2L2 22l4.9-1.4A10 10 0 1012 2zm0 18a8 8 0 01-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 1112 20zm4.4-6c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1-.6.8-.8 1-.3.1-.5 0a6.5 6.5 0 01-1.9-1.2 7.2 7.2 0 01-1.3-1.7c-.1-.2 0-.4.1-.5l.4-.4.2-.4v-.4l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5a1 1 0 00-.7.3 3 3 0 00-.9 2.2 5.2 5.2 0 001 2.7 11.8 11.8 0 004.6 4c.6.3 1.1.4 1.5.5a3.6 3.6 0 001.6.1c.5-.1 1.4-.6 1.6-1.1s.2-1 .1-1.1z"/></svg>
+          <div><b>WhatsApp us</b><span>Fastest for quick questions</span></div>
+        </a>
+      </div>
+    </div>
+
+    <!-- ▼ Get your free access key at https://web3forms.com/ and replace the value below -->
+    <form class="card reveal" id="quoteForm" novalidate>
+      <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_KEY">
+      <input type="hidden" name="subject" value="New enquiry — Planttech Engineering">
+      <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+      <div id="formFields">
+        <div class="row">
+          <div class="field"><label for="f-name">Name <span class="req">*</span></label><input id="f-name" name="name" type="text" autocomplete="name" required><span class="err">Please enter your name.</span></div>
+          <div class="field"><label for="f-company">Company</label><input id="f-company" name="company" type="text" autocomplete="organization"></div>
+        </div>
+        <div class="row">
+          <div class="field"><label for="f-phone">Phone <span class="req">*</span></label><input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required><span class="err">Please enter your phone number.</span></div>
+          <div class="field">
+            <label for="f-industry">Industry</label>
+            <select id="f-industry" name="industry">
+              <option value="">Select…</option>
+              <option>Herbal</option><option>Nutraceutical</option><option>Pharmaceutical</option><option>Chemical</option><option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="field"><label for="f-req">What do you need? <span class="req">*</span></label><textarea id="f-req" name="requirement" placeholder="e.g. 2 KL jacketed reactor, SS 316L, for herbal extraction" required></textarea><span class="err">Please describe your requirement.</span></div>
+        <button class="btn btn-primary btn-block" type="submit" id="submitBtn"><span class="btn-txt">Send requirement</span></button>
+        <div class="form-note">No spam. We use your details only to respond to this enquiry.</div>
+        <div class="form-net-err" id="formNetErr">Something went wrong — please call or WhatsApp us directly.</div>
+      </div>
+      <div class="form-done" id="formDone" aria-live="polite">
+        <svg class="ok" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.5 2.5L16 9"/></svg>
+        <h3>Requirement received</h3>
+        <p>Thanks — our engineering team will get back to you within one business day.</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="logo"><span>PLANTTECH</span></div>
+        <p>Planttech Engineering Pvt. Ltd. — manufacturer of process machinery for herbal, nutraceutical, pharmaceutical and chemical plants, based at the foothills of the Himalayas in Haridwar.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Equipment</h4>
+        <a href="#equipment">Pressure Vessels</a>
+        <a href="#equipment">Reactors & Agitators</a>
+        <a href="#equipment">Extraction Units</a>
+        <a href="#equipment">Distillation Systems</a>
+        <a href="#equipment">Storage Tanks</a>
+      </div>
+      <div class="foot-col">
+        <h4>Company</h4>
+        <a href="#industries">Industries</a>
+        <a href="#capabilities">Capabilities</a>
+        <a href="#process">How we work</a>
+        <a href="#quote">Request a Quote</a>
+      </div>
+      <div class="foot-col">
+        <h4>Contact</h4>
+        <a href="tel:+917942820338">+91 79428 20338</a>
+        <a href="https://wa.me/917942820338">WhatsApp</a>
+        <a href="mailto:info@planttech.co.in">info@planttech.co.in</a>
+        <p style="margin-top:8px;font-size:.82rem">Khasra No. 587, Akbarpur, Laksar, Haridwar, Uttarakhand 247663</p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="yr"></span> Planttech Engineering Pvt. Ltd.</span>
+      <span>GST 05AAQCP2989J1ZO · Managing Director: Ashish Singh</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ STICKY MOBILE BAR ============ -->
+<div class="mbar">
+  <a class="call" href="tel:+917942820338"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M5 4h4l2 5-3 2a14 14 0 006 6l2-3 5 2v4a2 2 0 01-2 2A18 18 0 013 6a2 2 0 012-2z"/></svg>Call</a>
+  <a class="wa" href="https://wa.me/917942820338"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.5 15.2L2 22l4.9-1.4A10 10 0 1012 2z"/></svg>WhatsApp</a>
+</div>
+
+<script>
+  // year
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // mobile drawer
+  var hamb=document.getElementById('hamb'),drawer=document.getElementById('drawer'),closeD=document.getElementById('closeDrawer');
+  function openD(){drawer.classList.add('open');drawer.setAttribute('aria-hidden','false');hamb.setAttribute('aria-expanded','true')}
+  function shutD(){drawer.classList.remove('open');drawer.setAttribute('aria-hidden','true');hamb.setAttribute('aria-expanded','false')}
+  hamb.addEventListener('click',openD);
+  closeD.addEventListener('click',shutD);
+  drawer.querySelectorAll('a').forEach(function(a){a.addEventListener('click',shutD)});
+
+  // scroll reveal
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+
+  // hero image slider
+  (function(){
+    var slider=document.getElementById('heroSlider');
+    if(!slider) return;
+    var slides=Array.prototype.slice.call(slider.querySelectorAll('.slide'));
+    var dotsWrap=document.getElementById('heroDots');
+    var caption=document.getElementById('heroCaption');
+    var prev=document.getElementById('heroPrev'),next=document.getElementById('heroNext');
+    var i=0,timer=null;
+    var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var DELAY=5500;
+
+    // build dots
+    slides.forEach(function(s,idx){
+      var b=document.createElement('button');
+      b.type='button';
+      b.setAttribute('aria-label','Go to slide '+(idx+1));
+      b.addEventListener('click',function(){go(idx);restart()});
+      dotsWrap.appendChild(b);
+    });
+    var dots=Array.prototype.slice.call(dotsWrap.children);
+
+    function go(n){
+      i=(n+slides.length)%slides.length;
+      slides.forEach(function(s,idx){s.classList.toggle('is-active',idx===i)});
+      dots.forEach(function(d,idx){d.classList.toggle('on',idx===i);d.setAttribute('aria-selected',idx===i)});
+      if(caption) caption.textContent=slides[i].getAttribute('data-caption')||'';
+    }
+    function nextS(){go(i+1)}
+    function prevS(){go(i-1)}
+    function start(){if(!reduce&&slides.length>1) timer=setInterval(nextS,DELAY)}
+    function stop(){if(timer){clearInterval(timer);timer=null}}
+    function restart(){stop();start()}
+
+    next.addEventListener('click',function(){nextS();restart()});
+    prev.addEventListener('click',function(){prevS();restart()});
+
+    // pause on hover / focus
+    slider.addEventListener('mouseenter',stop);
+    slider.addEventListener('mouseleave',start);
+    slider.addEventListener('focusin',stop);
+    slider.addEventListener('focusout',start);
+
+    // keyboard (when controls focused)
+    document.querySelector('.hero').addEventListener('keydown',function(e){
+      if(e.key==='ArrowRight'){nextS();restart()}
+      if(e.key==='ArrowLeft'){prevS();restart()}
+    });
+
+    // swipe
+    var x0=null;
+    slider.addEventListener('touchstart',function(e){x0=e.touches[0].clientX;stop()},{passive:true});
+    slider.addEventListener('touchend',function(e){
+      if(x0===null) return;
+      var dx=e.changedTouches[0].clientX-x0;
+      if(Math.abs(dx)>40){dx<0?nextS():prevS()}
+      x0=null;restart();
+    },{passive:true});
+
+    go(0);start();
+  })();
+
+  // form — submits to Web3Forms (https://web3forms.com/ — free, no server needed)
+  // Replace YOUR_WEB3FORMS_KEY in the hidden input above with your access key.
+  document.getElementById('quoteForm').addEventListener('submit',function(ev){
+    ev.preventDefault();
+    var form=this;
+    var nameF=document.getElementById('f-name');
+    var phoneF=document.getElementById('f-phone');
+    var reqF=document.getElementById('f-req');
+    var btn=document.getElementById('submitBtn');
+    var txt=btn.querySelector('.btn-txt');
+    var netErr=document.getElementById('formNetErr');
+
+    // clear previous states
+    form.querySelectorAll('.field').forEach(function(f){f.classList.remove('has-error')});
+    netErr.classList.remove('show');
+
+    // validate required fields
+    var firstErr=null;
+    [nameF,phoneF,reqF].forEach(function(f){
+      if(!f.value.trim()){
+        f.closest('.field').classList.add('has-error');
+        if(!firstErr) firstErr=f;
+      }
+    });
+    if(firstErr){firstErr.focus();return}
+
+    // submit
+    btn.disabled=true;
+    txt.textContent='Sending…';
+
+    fetch('https://api.web3forms.com/submit',{method:'POST',body:new FormData(form)})
+      .then(function(r){return r.json()})
+      .then(function(j){
+        btn.disabled=false;
+        txt.textContent='Send requirement';
+        if(j.success){
+          document.getElementById('formFields').style.display='none';
+          document.getElementById('formDone').classList.add('show');
+        } else {
+          netErr.classList.add('show');
+        }
+      })
+      .catch(function(){
+        btn.disabled=false;
+        txt.textContent='Send requirement';
+        netErr.classList.add('show');
+      });
+  });
+</script>
+</body>
+</html>
